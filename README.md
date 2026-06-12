@@ -84,15 +84,33 @@ If I continue working on this project I'd probably add:
 
 ## Screenshots
 
-I'll add screenshots here soon.
-
-* Landing Page
+* Landing Page or register PAge
 <img width="1919" height="956" alt="image" src="https://github.com/user-attachments/assets/a9adddca-cee0-4be3-ac7b-15c46792f26d" />
 
-  
+*login page
+<img width="1919" height="958" alt="image" src="https://github.com/user-attachments/assets/55c02470-ac39-410c-a627-432fc47b9aa7" />
+
 * Dashboard
+<img width="1919" height="967" alt="image" src="https://github.com/user-attachments/assets/13dac855-80d2-4a3c-997d-50b9f0925eb8" />
+
 * Monitor Management
+<img width="1910" height="964" alt="image" src="https://github.com/user-attachments/assets/692400eb-3df3-4217-a76d-93df88cb3ec5" />
+
 * Monitor Details
+<img width="1919" height="962" alt="image" src="https://github.com/user-attachments/assets/512ed3cb-5418-4c38-9e68-924ef13f84a6" />
+
+*Create Monitor
+<img width="1915" height="946" alt="image" src="https://github.com/user-attachments/assets/d603ef38-bea2-4542-8cac-5f03687fca46" />
+
+*Edit Monitor
+<img width="1919" height="942" alt="image" src="https://github.com/user-attachments/assets/64b5e445-63ca-4d58-9c1a-045018880a6b" />
+
+*Filtering all UP monitors
+<img width="1917" height="811" alt="image" src="https://github.com/user-attachments/assets/50bf9a62-2030-43e8-b3b2-17669025c8b3" />
+
+*filtering a DOWN monitor
+<img width="1919" height="517" alt="image" src="https://github.com/user-attachments/assets/70e1180f-09b0-48b2-b609-6f556c26a38a" />
+
 
 ---
 
