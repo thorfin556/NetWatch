@@ -47,13 +47,32 @@ Backend:
 
 ---
 
+## Project Structure
+
+Backend/
+├── controllers
+├── models
+├── routes
+├── middleware
+├── utils
+
+Frontend/
+├── pages
+├── components
+├── hooks
+├── context
+├── api
+
+---
+
 ## Stuff that gave me headaches
 
-Probably authentication 😭
+Probably authentication 
 
 JWT made sense in theory until I actually had to connect everything together.
 
 Another annoying part was getting the monitor checking logic working properly and making sure old monitoring records didn't pile up forever in the database.
+I was worried that if the data is stored every minute in mongoDB wouldnt it exceed the free limit at some point.
 
 I also spent way longer than I want to admit fixing routing issues on the frontend.
 
@@ -111,6 +130,10 @@ If I continue working on this project I'd probably add:
 *filtering a DOWN monitor
 <img width="1919" height="517" alt="image" src="https://github.com/user-attachments/assets/70e1180f-09b0-48b2-b609-6f556c26a38a" />
 
+## Live Demo
+
+Currently not deployed.
+Planning to deploy after adding documentation and final polishing.
 
 ---
 
