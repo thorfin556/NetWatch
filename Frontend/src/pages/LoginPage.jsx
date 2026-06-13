@@ -97,17 +97,7 @@ function LoginPage() {
           <div className="flex flex-col lg:flex-row gap-12 items-start lg:items-center">
 
             {/* ── LEFT HERO ── */}
-            <div className="flex-1 space-y-7 lg:pr-4">
-
-              {/* Status badge */}
-              <div className="inline-flex items-center gap-2.5 border border-green-500/25 bg-green-500/[0.07] px-4 py-2 text-xs text-green-400 font-mono rounded-full">
-                <span className="relative flex h-1.5 w-1.5">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
-                  <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-green-400" />
-                </span>
-                All systems operational · 99.97% uptime
-              </div>
-
+            <div className="flex-1 space-y-7 lg:pr-4">         
               {/* Big headline */}
               <div className="space-y-0">
                 <div className="flex items-end gap-0 leading-none">
