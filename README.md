@@ -8,7 +8,7 @@ NetWatch is basically my attempt at making a monitoring platform from scratch.
 
 A user can sign up, add websites they want to monitor and then the backend keeps checking those websites automatically. The results get stored and later shown on a dashboard with uptime stats, response times and monitor history.
 
-Not gonna lie, when I started this project I thought it would take maybe a week or two. It ended up teaching me way more backend stuff than I expected.
+Not gonna lie, when I started this project I thought it would take maybe two week or maybe three. It ended up teaching me way more backend stuff than I expected.
 
 ---
 
