@@ -304,10 +304,8 @@ export async function dashboard(req,res) {
         recentChecks: recentChecks,
         UpTimePercentage: uptime,
         LastCheck: lastCheck
-        ? lastCheck.checkedAt.toLocaleString("en-IN", {
-            timeZone: "Asia/Kolkata"
-            })
-            : "No checks yet",
+        ? lastCheck.checkedAt
+        : null,
         fastestMonitor: fastest
         ?{
             name: fastest.monitor.name,
