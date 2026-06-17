@@ -3,7 +3,7 @@ import useAuth from "../hooks/useAuth.jsx";
 
 const NAV_PATHS = [
   { label: "Dashboard",    path: "/dashboard" },
-  { label: "Monitors",     path: "/monitors" },
+  { label: "Monitors",     path: "/monitor" },
   { label: "Alerts",       path: "/alerts" },
   { label: "Status Pages", path: "/status-pages", active: true },
   { label: "Integrations", path: "/integrations" },
