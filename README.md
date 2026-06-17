@@ -13,7 +13,7 @@ Not gonna lie, when I started this project I thought it would take maybe two wee
 ---
 ## Live Demo
 
-https://net-watch-2i7ayb80u-mohd-asim.vercel.app
+https://net-watch-hazel.vercel.app/
 
 ---
 
