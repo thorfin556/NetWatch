@@ -1,5 +1,14 @@
 import mongoose from "mongoose";
 
+// const dns = require('dns')
+import dns from "dns";
+
+
+dns.setServers([
+  '1.1.1.1',
+  '8.8.8.8'
+])
+
 export const connectDB = async () => {
   try {
     await mongoose

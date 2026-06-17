@@ -6,7 +6,7 @@ import userRouter from "./routes/userRoutes.js";
 import dotenv from "dotenv";
 import monitorRouter from "./routes/monitorRoutes.js";
 import { checkMonitors } from "./utils/checkMonitor.js";
-import "./utils/cronJob.js"
+import "./utils/cronJob.js";
 
 dotenv.config();
 
