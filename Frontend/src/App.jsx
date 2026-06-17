@@ -11,6 +11,7 @@ import EditPage from './pages/EditMonitorPage';
 import MonitorDetailPage from './pages/MonitorDetailPage';
 import FeaturesPage from './pages/FeaturesPage';
 import AboutMePage from './pages/AboutMe';
+import SettingsPage from './pages/SettingsPage';
 
 function App(){
   return (
@@ -21,6 +22,7 @@ function App(){
       <Route path='/' element ={<LoginPage/>}/>
       <Route path='/register' element ={<RegisterPage/>}/>
       <Route path='/features' element ={<FeaturesPage/>}/>
+      <Route path="/settings"     element={<SettingsPage />} />
       <Route path='/about-me' element ={<AboutMePage/>}/>
       <Route path='/edit-monitor/:id' element ={<EditPage/>}/>
       <Route path='/monitor/:id' element ={<MonitorDetailPage/>}/>
