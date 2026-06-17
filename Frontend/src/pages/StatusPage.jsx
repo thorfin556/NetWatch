@@ -40,7 +40,7 @@ export default function StatusPage() {
   return (
     <div className="flex h-screen bg-[#F6F2EB] text-[#111827] overflow-hidden font-sans">
       {/* Sidebar */}
-      <aside className="w-[190px] shrink-0 border-r border-[#E7E0D8] bg-white flex flex-col">
+      <aside className="w-47.5 shrink-0 border-r border-[#E7E0D8] bg-white flex flex-col">
         <div className="px-5 py-5 border-b border-[#E7E0D8]">
           <div className="flex items-center gap-2.5">
             <svg width="32" height="26" viewBox="0 0 34 28" fill="none">
@@ -79,7 +79,7 @@ export default function StatusPage() {
 
       {/* Main */}
       <div className="flex-1 flex flex-col min-w-0 overflow-hidden">
-        <header className="h-[60px] shrink-0 border-b border-[#E7E0D8] bg-white flex items-center px-7">
+        <header className="h-15 shrink-0 border-b border-[#E7E0D8] bg-white flex items-center px-7">
           <div>
             <h1 className="text-[15px] font-bold text-[#111827]">Status Pages</h1>
             <p className="text-xs text-[#9C8E80]">Create public status pages to share service uptime with your users.</p>

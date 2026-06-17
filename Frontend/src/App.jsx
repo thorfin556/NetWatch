@@ -14,6 +14,7 @@ import AboutMePage from './pages/AboutMe';
 import SettingsPage from './pages/SettingsPage';
 import AlertsPage from './pages/AlertPage';
 import StatusPage from './pages/StatusPage';
+import IntegrationsPage from './pages/IntegrationPage';
 
 function App(){
   return (
@@ -26,6 +27,7 @@ function App(){
       <Route path='/features' element ={<FeaturesPage/>}/>
       <Route path="/settings" element={<SettingsPage />} />
       <Route path="/status-pages" element={<StatusPage />} />
+      <Route path="/integrations" element={<IntegrationsPage />} />
       <Route path="/alerts" element={<AlertsPage />} />
       <Route path='/about-me' element ={<AboutMePage/>}/>
       <Route path='/edit-monitor/:id' element ={<EditPage/>}/>
