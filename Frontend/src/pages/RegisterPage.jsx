@@ -28,7 +28,7 @@ function RegisterPage() {
     }
 
     return (
-        <div className="h-screen bg-[#18110C] text-white overflow-hidden relative flex flex-col">
+        <div className="min-h-screen bg-[#18110C] text-white overflow-x-hidden relative flex flex-col">
 
             {/* SUBTLE GRID BACKGROUND */}
             <div
@@ -45,7 +45,7 @@ function RegisterPage() {
             <div className="absolute top-[-10%] right-[25%] w-[320px] h-80 rounded-full bg-[#D4A94D]/5 blur-[120px] pointer-events-none z-0" />
 
             {/* NAVBAR — identical to LoginPage */}
-            <nav className="relative z-10 flex items-center justify-between px-8 py-5 lg:px-16 border-b border-white/5">
+            <nav className="relative z-10 flex items-center justify-between px-4 py-4 lg:px-16 border-b border-white/5">
 
                 {/* Logo */}
                 <div className="flex items-center gap-3">
@@ -88,7 +88,7 @@ function RegisterPage() {
                 {/* Sign In button */}
                 <button
                     onClick={() => navigate("/login")}
-                    className="border border-[#D4A94D]/50 px-5 py-1.5 text-sm text-[#D4A94D] hover:bg-[#D4A94D]/8 hover:border-[#D4A94D]/80 transition-all duration-150 rounded-[3px] font-medium bg-transparent cursor-pointer"
+                    className="border border-[#D4A94D]/50 px-3 py-2 text-xs sm:text-sm  text-[#D4A94D] hover:bg-[#D4A94D]/8 hover:border-[#D4A94D]/80 transition-all duration-150 rounded-[3px] font-medium bg-transparent cursor-pointer"
                 >
                     Sign In
                 </button>
@@ -96,11 +96,11 @@ function RegisterPage() {
 
             {/* MAIN */}
             <div className="relative z-10 flex-1 flex items-center py-10">
-                <div className="w-full max-w-350 mx-auto px-8 lg:px-16">
-                    <div className="flex flex-col lg:flex-row gap-12 items-start lg:items-center">
+                <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-16">
+                    <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 items-center lg:items-center">
 
                         {/* LEFT HERO */}
-                        <div className="flex-1 space-y-7 lg:pr-4">
+                        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-16">
 
 
                             {/* Big headline */}
@@ -153,13 +153,13 @@ function RegisterPage() {
                             </div>
 
                             {/* Description */}
-                            <p className="text-[#B8A999] text-[18px] max-w-md leading-8">
+                            <p className="hidden md:block text-[#B8A999] text-[18px] max-w-md leading-8">
                                 NetWatch watches your APIs, sites, and services around the clock.
                                 When something breaks, you'll know before your users do.
                             </p>
 
                             {/* Monitor status cards */}
-                            <div className="space-y-1.5 max-w-md">
+                            <div className="hidden md:block space-y-1.5 max-w-md">
 
                                 {/* DOWN alert */}
                                 <div className="flex items-center gap-3 border border-red-500/20 bg-[#1E0E0A] px-4 py-3 rounded-[5px]">
@@ -217,7 +217,7 @@ function RegisterPage() {
                         </div>
 
                         {/* REGISTER CARD */}
-                        <div className="w-full lg:w-115 shrink-0">
+                        <div className="w-full max-w-md mx-auto lg:w-115 shrink-0">
                             <div
                                 className="w-full border border-[#D4A94D]/20 bg-[#211811]/90 p-8"
                                 style={{
@@ -354,14 +354,6 @@ function RegisterPage() {
                                 </form>
                             </div>
 
-                            {/* Trust badge */}
-                            <div
-                                className="mt-3 ml-auto mr-2 w-fit border border-[#D4A94D]/15 bg-[#D4A94D]/3 px-3 py-1.5 flex items-center gap-2 text-[10px] text-[#8C7B69] font-mono rounded-[3px]"
-                                style={{ transform: "rotate(0.8deg)" }}
-                            >
-                                <span className="text-green-400">●</span>
-                                SOC 2 Type II · GDPR ready
-                            </div>
                         </div>
 
                     </div>

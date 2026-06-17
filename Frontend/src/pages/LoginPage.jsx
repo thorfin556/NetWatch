@@ -30,7 +30,7 @@ function LoginPage() {
   };
 
   return (
-    <div className="h-screen bg-[#18110C] text-white overflow-hidden relative flex flex-col">
+    <div className="min-h-screen bg-[#18110C] text-white overflow-x-hidden relative flex flex-col">
 
       {/* SUBTLE GRID BACKGROUND */}
       <div
@@ -47,7 +47,7 @@ function LoginPage() {
       <div className="absolute top-[-10%] right-[25%] w-[320px] h-80 rounded-full bg-[#D4A94D]/5 blur-[120px] pointer-events-none z-0" />
 
       {/* ── NAVBAR ── */}
-      <nav className="relative z-10 flex items-center justify-between px-8 py-5 lg:px-16 border-b border-white/5">
+      <nav className="relative z-10 flex items-center justify-between px-4 py-4 lg:px-16 border-b border-white/5">
 
         {/* Logo */}
         <div className="flex items-center gap-3">
@@ -85,7 +85,7 @@ function LoginPage() {
         {/* Register button */}
         <button
           onClick={() => navigate("/register")}
-          className="border border-[#D4A94D]/50 px-5 py-1.75 text-sm text-[#D4A94D] hover:bg-[#D4A94D]/8 hover:border-[#D4A94D]/80 transition-all duration-150 rounded-[3px] font-medium"
+          className="border border-[#D4A94D]/50 px-3 py-2 text-xs sm:text-sm text-[#D4A94D] hover:bg-[#D4A94D]/8 hover:border-[#D4A94D]/80 transition-all duration-150 rounded-[3px] font-medium"
         >
           Register Here
         </button>
@@ -93,11 +93,11 @@ function LoginPage() {
 
       {/* ── MAIN ── */}
       <div className="relative z-10 flex-1 flex items-center py-10">
-        <div className="w-full max-w-330 mx-auto px-8 lg:px-16">
+        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-16">
           <div className="flex flex-col lg:flex-row gap-12 items-start lg:items-center">
 
             {/* ── LEFT HERO ── */}
-            <div className="flex-1 space-y-7 lg:pr-4">         
+            <div className="hidden lg:block flex-1 space-y-7 lg:pr-4">       
               {/* Big headline */}
               <div className="space-y-0">
                 <div className="flex items-end gap-0 leading-none">
