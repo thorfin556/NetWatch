@@ -11,7 +11,7 @@ import "./utils/cronJob.js";
 dotenv.config();
 
 const app = express();
-const port = 4000;
+const port = process.env.PORT || 4000;
 
 // middlewares
 app.use(cors());
