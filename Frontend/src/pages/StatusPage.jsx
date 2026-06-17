@@ -32,7 +32,7 @@ const MOCK_SERVICES = [
   { name: "Database",     status: "Operational" },
 ];
 
-export default function StatusPagesPage() {
+export default function StatusPage() {
   const navigate = useNavigate();
   const { logout, user } = useAuth();
   const handleLogOut = () => { logout(); navigate("/login"); };

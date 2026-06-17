@@ -13,6 +13,7 @@ import FeaturesPage from './pages/FeaturesPage';
 import AboutMePage from './pages/AboutMe';
 import SettingsPage from './pages/SettingsPage';
 import AlertsPage from './pages/AlertPage';
+import StatusPage from './pages/StatusPage';
 
 function App(){
   return (
@@ -24,6 +25,7 @@ function App(){
       <Route path='/register' element ={<RegisterPage/>}/>
       <Route path='/features' element ={<FeaturesPage/>}/>
       <Route path="/settings" element={<SettingsPage />} />
+      <Route path="/status-pages" element={<StatusPage />} />
       <Route path="/alerts" element={<AlertsPage />} />
       <Route path='/about-me' element ={<AboutMePage/>}/>
       <Route path='/edit-monitor/:id' element ={<EditPage/>}/>
