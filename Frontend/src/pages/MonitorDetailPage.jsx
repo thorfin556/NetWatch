@@ -241,7 +241,7 @@ function MonitorDetailPage() {
 
   // ── Sidebar ──
   const Sidebar = () => (
-    <aside className="w-47.5 shrink-0 border-r border-[#E7E0D8] bg-white flex flex-col">
+    <aside className="hidden md:flex w-47.5 shrink-0 border-r border-[#E7E0D8] bg-white flex-col">
       <div className="px-5 py-5 border-b border-[#E7E0D8]">
         <div className="flex items-center gap-2.5">
           <svg width="32" height="26" viewBox="0 0 34 28" fill="none">
@@ -307,15 +307,15 @@ function MonitorDetailPage() {
       <div className="flex-1 flex flex-col min-w-0 overflow-hidden">
 
         {/* Header */}
-        <header className="h-15 shrink-0 border-b border-[#E7E0D8] bg-white flex items-center justify-between px-7">
-          <button onClick={() => navigate("/monitors")}
+        <header className="shrink-0 border-b border-[#E7E0D8] bg-white flex flex-col md:flex-row gap-3 md:gap-0 md:items-center justify-between px-3 md:px-7 py-3">
+          <button onClick={() => navigate("/monitor")}
             className="flex items-center gap-2 text-sm text-[#6B7280] hover:text-[#111827] transition-colors group">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="group-hover:-translate-x-0.5 transition-transform">
               <path d="M10 3L5 8l5 5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
             Back to Monitors
           </button>
-          <div className="flex items-center gap-2">
+          <div className="flex flex-wrap items-center gap-2">
             <button onClick={handleRefresh}
               className={`flex items-center gap-1.5 border border-[#E7E0D8] bg-white text-[#6B7280] hover:text-[#111827] hover:border-[#D4C4B0] text-xs font-medium px-3 py-2 rounded-lg transition-colors ${refreshing ? "opacity-60" : ""}`}>
               <svg width="13" height="13" viewBox="0 0 13 13" fill="none" className={refreshing ? "animate-spin" : ""}>
@@ -341,11 +341,11 @@ function MonitorDetailPage() {
           </div>
         </header>
 
-        <main className="flex-1 overflow-y-auto px-7 py-6 space-y-5">
+        <main className="flex-1 overflow-y-auto px-3 md:px-7 py-4 md:py-6 space-y-5">
 
           {/* ── HERO CARD ── */}
           <div className="bg-white rounded-xl border border-[#E7E0D8] shadow-[0_4px_20px_rgba(0,0,0,0.04)] px-6 py-5">
-            <div className="flex items-center justify-between">
+            <div className="flex flex-col md:flex-row gap-4 md:items-center justify-between">
               <div className="flex items-center gap-4">
                 <MonitorAvatar name={monitor?.name} size="lg" />
                 <div>
@@ -356,7 +356,7 @@ function MonitorDetailPage() {
                   </a>
                 </div>
               </div>
-              <div className="flex items-center gap-3">
+              <div className="flex flex-wrap items-center gap-3">
                 <StatusBadge up={monitor?.isActive} />
                 {latest?.checkedAt && (
                   <span className="text-[10px] text-[#B0A090] font-mono">

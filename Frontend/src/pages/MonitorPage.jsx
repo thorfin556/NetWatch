@@ -188,9 +188,9 @@ function MonitorPage() {
 
   // ── Sidebar ────────────────────────────────────────────────────────────────
   const Sidebar = () => (
-    <aside className="w-47.5 shrink-0 border-r border-[#E7E0D8] bg-white flex flex-col">
+    <aside className="hidden md:flex w-47.5 shrink-0 border-r border-[#E7E0D8] bg-white flex-col">
       <div className="px-5 py-5 border-b border-[#E7E0D8]">
-        <div className="flex items-center gap-2.5">
+        <div className="flex flex-wrap items-center gap-2">
           <svg width="32" height="26" viewBox="0 0 34 28" fill="none">
             <polyline points="0,14 4,14 7,4 10,24 13,10 16,18 19,6 22,22 25,12 28,16 31,14 34,14"
               fill="none" stroke="#F59E0B" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -263,19 +263,51 @@ function MonitorPage() {
 
       <div className="flex-1 flex flex-col min-w-0 overflow-hidden">
         {/* Header */}
-        <header className="h-15 shrink-0 border-b border-[#E7E0D8] bg-white flex items-center justify-between px-7">
-          <div>
-            <h1 className="text-[15px] font-bold text-[#111827]">Monitors</h1>
-            <p className="text-xs text-[#9C8E80]">Manage and monitor your websites and APIs.</p>
-          </div>
-          <button onClick={openCreate}
-            className="flex items-center gap-1.5 bg-[#F59E0B] hover:bg-[#EA8C00] transition-colors px-4 py-2 rounded-lg text-xs font-semibold text-white shadow-sm">
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 1v10M1 6h10" stroke="white" strokeWidth="1.8" strokeLinecap="round"/></svg>
-            Create Monitor
-          </button>
-        </header>
+<div className="bg-white rounded-xl border border-[#E7E0D8] shadow-sm p-4 mb-4">
+  <div className="flex items-center justify-between">
+    <div>
+      <button
+        onClick={() => navigate("/dashboard")}
+        className="flex items-center gap-2 text-sm text-[#6B7280] hover:text-[#111827] transition-colors group"
+      >
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          className="group-hover:-translate-x-0.5 transition-transform"
+        >
+          <path
+            d="M10 3L5 8l5 5"
+            stroke="currentColor"
+            strokeWidth="1.6"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
 
-        <main className="flex-1 overflow-y-auto px-7 py-6">
+        Back to Dashboard
+      </button>
+
+      <h1 className="text-lg font-bold text-[#111827] mt-2">
+        Monitors
+      </h1>
+
+      <p className="text-xs text-[#9C8E80]">
+        Manage and monitor your websites and APIs.
+      </p>
+    </div>
+
+    <button
+      onClick={openCreate}
+      className="flex items-center gap-2 bg-[#F59E0B] hover:bg-[#EA8C00] px-4 py-2 rounded-lg text-white text-sm font-semibold transition-colors"
+    >
+      +
+      Create Monitor
+    </button>
+  </div>
+</div>
+        <main className="flex-1 overflow-y-auto px-3 md:px-7 py-4 md:py-6">
           <div className="bg-white rounded-xl border border-[#E7E0D8] shadow-[0_4px_20px_rgba(0,0,0,0.04)] overflow-hidden">
 
             {/* Toolbar */}
@@ -311,7 +343,8 @@ function MonitorPage() {
             </div>
 
             {/* Table */}
-            <table className="w-full text-sm">
+            <div className="overflow-x-auto">
+            <table className="w-full text-sm min-w-175">
               <thead>
                 <tr className="border-b border-[#F0EBE3] bg-[#FAF8F5]">
                   {["Monitor", "Status", "Created At", ""].map((h) => (
@@ -413,7 +446,7 @@ function MonitorPage() {
                 ))}
               </tbody>
             </table>
-
+            </div>
             {/* Footer */}
             {filtered.length > 0 && (
               <div className="flex items-center justify-between px-5 py-3.5 border-t border-[#F0EBE3] bg-[#FAF8F5]">
